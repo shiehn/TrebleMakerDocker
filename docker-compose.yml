@@ -1,0 +1,34 @@
+version: '3.3'
+services:
+  treblemakerdb:
+    image: mysql:5.7
+    volumes:
+      - ./treblemaker-db.sql:/docker-entrypoint-initdb.d/treblemaker-db.sql
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=hivecomposedb
+      - MYSQL_USER=treble
+      - MYSQL_PASSWORD=maker
+    ports:
+      - "3333:3306"
+  hazelcast:
+    image: hazelcast/hazelcast
+    ports:
+      - "5701:5701"
+  treblemakerapi:
+    image: treblemakerapi
+    depends_on:
+      - treblemakerdb
+      - hazelcast
+    ports:
+      - "7777:7777"
+  treblemaker:
+    image: treblemaker
+    depends_on:
+      - treblemakerapi
+      - hazelcast
+  treblemakerweb:
+    image: treblemakerweb
+    ports:
+      - "80:80"
