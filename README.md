@@ -69,6 +69,6 @@ When a track has completed it be will be pushed to the ‘TrebleMakerApi’.
 
 ![ratingtool](https://user-images.githubusercontent.com/826261/40818411-f19bfbda-6524-11e8-9190-ff7a42edaaa6.png)
 
-After a track has been ‘published’ you can the visit http://localhost to listen & download the track.
+* After a track has been ‘published’ you can the visit http://localhost to listen & download the track.
 
 ![player](https://user-images.githubusercontent.com/826261/40818470-1dc3ae56-6525-11e8-8f2f-f78abf3a32f7.png)
