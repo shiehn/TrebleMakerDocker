@@ -4,6 +4,7 @@ services:
     image: mysql:5.7
     volumes:
       - ./treblemaker-db.sql:/docker-entrypoint-initdb.d/treblemaker-db.sql
+      - /opt/mysql_data:/var/lib/mysql
     restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=password
