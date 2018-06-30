@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd /TrebleMakerDocker/
-
 /usr/local/bin/docker-compose stop
 
 kill $(ps aux | grep 'docker' | awk '{print $2}')
