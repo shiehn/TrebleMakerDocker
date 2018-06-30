@@ -24,9 +24,9 @@ pushd TrebleMakerApi/
     /usr/bin/docker build --no-cache -t treblemakerapi .
 popd
 
-git clone https://github.com/shiehn/TrebleMakerWeb.git
+git clone https://github.com/shiehn/TrebleMakerClientSynths.git
     
-pushd TrebleMakerWeb/
+pushd TrebleMakerClientSynths/
     docker build --build-arg TMW_NEXT_TRACK_URL="http:\/\/localhost:7777\/api\/track" --build-arg TMW_S3_BUCKET="https:\/\/s3-us-west-2.amazonaws.com\/[YOUR-BUCKET-NAME]\/" --no-cache -t treblemakerweb . 
 popd
 
