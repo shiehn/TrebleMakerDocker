@@ -32,4 +32,4 @@ services:
   treblemakerweb:
     image: treblemakerweb
     ports:
-      - "80:80"
+      - "80:3000"
