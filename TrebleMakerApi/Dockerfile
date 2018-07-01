@@ -9,7 +9,7 @@ WORKDIR /TrebleMakerApi
 ENV TM_API_ROOT_DIR="/TrebleMakerApi" \
     TM_API_USER="treble" \
     TM_API_PASS="maker" \
-    TM_DB_CONN="jdbc:mysql://treblemakerdb:3306/hivecomposedb?useSSL=false&autoReconnect=true&maxReconnects=360&initialTimeout=2" \
+    TM_DB_CONN="jdbc:mysql://treblemakerdb:3306/hivecomposedb?useSSL=false&autoReconnect=true" \
     TM_DB_USER="treble" \
     TM_DB_PASS="maker" \
     TM_API_PORT="7777" \
