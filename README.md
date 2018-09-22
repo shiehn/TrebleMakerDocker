@@ -8,7 +8,7 @@ TrebleMaker.ai is a distributed system that procedurally generates royalty free 
 
 ---
 
-#### The system is composed of five main components:
+#### The system is composed of five related components:
 * **Data Parser**
     * This GoLang app converts the MusicXml dataset into a format consumable by the 'Model Trainers' https://github.com/shiehn/MusicXmlGoParser
      
@@ -25,7 +25,8 @@ TrebleMaker.ai is a distributed system that procedurally generates royalty free 
     * this Angular web GUI offers a way to 'rate' the generated audio files and decide which of files will be uploaded to TrebleMakerWeb
 
 * **TrebleMakerWeb**
-    * this Angular web GUI offers a user a way to listen and download the generated audio from the CDN (currently S3) https://github.com/shiehn/TrebleMakerWeb    
+    * this Angular web GUI offers a user a way to render, listen and download the generated midi https://github.com/shiehn/TrebleMakerClientSynths.git    
+ 
 
 ### Deploy Prerequisites:
 * Install latest ‘Docker’: https://docs.docker.com/install/
