@@ -19,7 +19,7 @@ TrebleMaker.ai is a distributed system that procedurally generates royalty free 
     * this API is consumed by the TrebleMakerWeb app and TrebleMakerCore.  Its primary purpose is to provide contextual music 'predictions' for TrebleMakerCore https://github.com/shiehn/TrebleMakerApi
 
 * **TrebleMakerCore**
-    * as the name suggests this SpringBoot Java app is the core component that assembles the MIDI and audio files.  During the assembly of the files it will constantly call out to TrebleMakerApi with context asking for musical predictions
+    * as the name suggests this SpringBoot Java app is the core component that assembles the MIDI and audio files.  During the assembly of the files it will constantly call out to TrebleMakerApi with context asking for musical predictions https://github.com/shiehn/TrebleMaker.git
  
 * **TrebleMakerRating**
     * this Angular web GUI offers a way to 'rate' the generated audio files and decide which of files will be uploaded to TrebleMakerWeb
